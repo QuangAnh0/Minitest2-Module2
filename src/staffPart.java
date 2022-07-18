@@ -21,4 +21,9 @@ public class staffPart extends staff {
         double salaryP=namePart.getWorktime()*money;
         return salaryP;
     }
+
+    @Override
+    public double tinhLuong() {
+        return worktime*100;
+    }
 }

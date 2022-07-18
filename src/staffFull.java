@@ -3,7 +3,21 @@ public class staffFull extends staff{
     public double punishcash;
     public double hardsalary;
 
+    @Override
+    public double tinhLuong() {
+        return hardsalary+(reward-punishcash);
+    }
+
     public staffFull() {
+    }
+
+    @Override
+    public String toString() {
+        return "staffFull{" +
+                "reward=" + reward +
+                ", punishcash=" + punishcash +
+                ", hardsalary=" + hardsalary +
+                '}';
     }
 
     public staffFull(int staffCode, String name, String phone, String email, double reward, double punishcash, double hardsalary) {

@@ -1,4 +1,4 @@
-public class staff {
+public abstract class staff {
     private int staffCode;
     private String name;
     private String phone;
@@ -11,7 +11,18 @@ public class staff {
         this.email = email;
     }
 
+    public abstract double tinhLuong();
     public staff() {
+    }
+
+    @Override
+    public String toString() {
+        return "staff{" +
+                "staffCode=" + staffCode +
+                ", name='" + name + '\'' +
+                ", phone='" + phone + '\'' +
+                ", email='" + email + '\'' +
+                '}';
     }
 
     public int getStaffCode() {
